@@ -18,6 +18,7 @@ VehicleTable.GetLocalVehicle = function()
             end
         end
     end
+    return
 end
 
 return VehicleTable
