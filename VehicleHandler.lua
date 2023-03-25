@@ -2,6 +2,9 @@ local VehiclesClient = require(game:GetService("Players").LocalPlayer.PlayerScri
 
 local VehicleTable = {}
 
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
 VehicleTable.VehicleData = debug.getupvalues(VehiclesClient.GetVehicleFromModel)[1]
 
 VehicleTable.GetTable = function()
@@ -22,22 +25,3 @@ VehicleTable.GetLocalVehicle = function()
 end
 
 return VehicleTable
-
--- for i,v in VehicleTable.GetAllVehicles() do print(i,v) end
--- for b,c in a do
--- 	table.append()
--- 	-- for c,d in b do
--- 	-- 	if c == "Model" then print(d.parent.parent) end
--- 	-- end
--- 	print("-")
--- end
-
--- if c == "LuaVehicle" then
--- 	for e,f in d do
--- 		if e == "Occupants" then
--- 			for g,h in f do
--- 				print(g,h)
--- 			end
--- 		end
--- 	end
--- end
