@@ -20,6 +20,7 @@ VehicleTable.GetLocalVehicle = function()
     end
 end
 
+return VehicleTable
 
 -- for i,v in VehicleTable.GetAllVehicles() do print(i,v) end
 -- for b,c in a do
