@@ -10,7 +10,7 @@ local Characters = workspace.Characters
 local Vehicles = workspace.Vehicles
 
 local AttritionHandler = {
-	Vehicles = debug.getupvalues(VehiclesClient.GetVehicleFromModel)[1]
+	Vehicles = debug.getupvalues(VehiclesClient.GetVehicleFromModel)[1],
 	Players = {},
 	Connections = {},
 	Table = {}
