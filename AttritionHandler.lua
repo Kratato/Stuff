@@ -74,7 +74,7 @@ AttritionHandler.GetPlayer = function(Char)
 	if AttritionHandler.LocalChar == Char then
 		return AttritionHandler.LocalChar
 	end
-	for Player,Character in AttritionHandler.Players
+	for Player,Character in AttritionHandler.Players do
 		if Character == Char then return Player end
 	end
 end
