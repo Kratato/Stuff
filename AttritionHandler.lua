@@ -104,7 +104,6 @@ AttritionHandler.GetTeam = function(Object)
 		if TeamColor == "Bright red" then return Teams["League of 1x1x1x1"]
 		elseif TeamColor == "Bright blue"then return Teams["United Bloxxers"]
 		else return Teams.Neutral end
-	end
 	elseif Object.Parent == Characters then
 		return AttritionHandler.GetPlayer(Object).Team
 	elseif Object.Parent = Players then
