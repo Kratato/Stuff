@@ -106,7 +106,7 @@ AttritionHandler.GetTeam = function(Object)
 		else return Teams.Neutral end
 	elseif Object.Parent == Characters then
 		return AttritionHandler.GetPlayer(Object).Team
-	elseif Object.Parent = Players then
+	elseif Object.Parent == Players then
 		return Object.Team
 	end
 	return Teams.Neutral
