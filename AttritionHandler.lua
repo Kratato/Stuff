@@ -39,7 +39,7 @@ local function UpdatePlayerList()
 	for Hash,Name in AttritionHandler.Table do
 		for _,CharacterModel in Characters:GetChildren() do
 			if CharacterModel:GetAttribute("Controller") == Hash then
-				if Name == LocalPlayer then
+				if Name == LocalPlayer.Name then
 					AttritionHandler.LocalChar = CharacterModel
 				else
 					AttritionHandler.Players[Name] = CharacterModel
